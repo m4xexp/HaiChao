@@ -13,7 +13,7 @@ const ListContainer = styled.ul`
     `}
 `;
 
-const NavItem = styled.li<{ menu?: any }>`
+const NavItem = styled.li<{ menu?: boolean }>`
   ${tw`
         text-xs
         md:text-base
@@ -50,16 +50,16 @@ function NavItems() {
       <Menu right styles={menuStyles}>
         <ListContainer>
           <NavItem menu>
-            <button>Home</button>
+            <a href="#">Home</a>
           </NavItem>
           <NavItem menu>
-            <button>Cars</button>
+            <a href="#">Cars</a>
           </NavItem>
           <NavItem menu>
-            <button>Services</button>
+            <a href="#">Services</a>
           </NavItem>
           <NavItem menu>
-            <button>Contact Us</button>
+            <a href="#">Contact Us</a>
           </NavItem>
         </ListContainer>
       </Menu>
@@ -68,16 +68,16 @@ function NavItems() {
   return (
     <ListContainer>
       <NavItem>
-        <button>Home</button>
+        <a href="#">Home</a>
       </NavItem>
       <NavItem>
-        <button>Cars</button>
+        <a href="#">Cars</a>
       </NavItem>
       <NavItem>
-        <button>Services</button>
+        <a href="#">Services</a>
       </NavItem>
       <NavItem>
-        <button>Contact Us</button>
+        <a href="#">Contact Us</a>
       </NavItem>
     </ListContainer>
   );

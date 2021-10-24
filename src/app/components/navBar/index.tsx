@@ -11,6 +11,7 @@ const NavbarContainer = styled.div`
         flex
         flex-row
         items-center
+        px-8
         lg:px-12
         justify-between
     `};
