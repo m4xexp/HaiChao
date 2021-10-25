@@ -2,7 +2,16 @@ module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        Blob: {
+          sm: "-25deg",
+          md: "-30deg",
+          lg: "-30deg",
+          xl: "-20deg",
+        },
+      },
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }

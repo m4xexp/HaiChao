@@ -41,7 +41,7 @@ function Logo() {
       <Image>
         <img src={CarLogoImg} alt="Car logo" />
       </Image>
-      <LogoText>hai chao</LogoText>
+      <LogoText>mg rent</LogoText>
     </LogoContainer>
   );
 }

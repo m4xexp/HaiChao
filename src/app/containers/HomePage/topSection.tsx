@@ -18,6 +18,10 @@ const TopSectionContainer = styled.div`
 
   min-height: 400px;
   margin-top: 6em;
+
+  @media (max-width: ${SCREENS.sm}) {
+    min-height: 325px;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -67,6 +71,7 @@ const Description = styled.p`
 `;
 
 const BlobContainer = styled.div`
+  user-select: none;
   width: 20em;
   height: 10em;
   position: absolute;
@@ -86,30 +91,28 @@ const BlobContainer = styled.div`
     max-height: 10em;
     right: -9em;
     top: -16em;
-    transform; rotate(-25deg);
+    transform: rotate(-30deg);
   }
-
 
   @media (min-width: ${SCREENS.lg}) {
     width: 50em;
     max-height: 30em;
     right: -7em;
     top: -15em;
-    transform; rotate(-30deg);
+    transform: rotate(-30deg);
   }
 
   @media (min-width: ${SCREENS.xl}) {
     width: 70em;
-    max-height: 10em;
-    right: -9em;
-    top: -16em;
-    transform; rotate(-20deg);
+    max-height: 30em;
+    right: -15em;
+    top: -25em;
+    transform: rotate(-20deg);
   }
-
- 
 `;
 
 const StandaloneCar = styled.div`
+  user-select: none;
   width: auto;
   height: 10em;
   right: -6em;
@@ -134,11 +137,7 @@ const StandaloneCar = styled.div`
     top: -5em;
   }
 
-  @media (min-width: ${SCREENS.xl}) {
-    height: 30em;
-    right: -13em;
-    top: -9em;
-  }
+  
 `;
 
 const ButtonContainer = styled.div`
@@ -146,8 +145,9 @@ const ButtonContainer = styled.div`
   flex
   flex-wrap
   mt-4
-  md:mt-6
+  md:mt-20
   md:gap-2
+  select-none
 `}
 `;
 
@@ -155,7 +155,7 @@ function TopSection() {
   return (
     <TopSectionContainer>
       <LeftContainer>
-        <Slogan>Rent The Best Qulity Car's Wiht Us. </Slogan>
+        <Slogan>Rent The Best Quality Car's With Us. </Slogan>
         <Description>
           Always choose the best car fron our local stores or order it remotely
           at the best price for you and get the best quality cars for as long as
